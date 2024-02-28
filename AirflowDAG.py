@@ -25,7 +25,7 @@ dag = DAG(
 )
 
 def my_task():
-    news_ingestion.main()
+    NewsIngestion.main()
 
 task = PythonOperator(
     task_id='my_task',
